@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="CustomCellSection" customModule="Browcery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop By Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-Bu-ixp">
+                        <rect key="frame" x="20" y="18" width="190" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Wbi-t9-NHh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GW0-gI-Rlp">
+                        <rect key="frame" x="220" y="21" width="80" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="HAI-IB-j1N"/>
+                            <constraint firstAttribute="height" constant="22" id="db5-Kc-fPO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="View All" image="forward_red">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0eH-Nc-6JY">
+                        <rect key="frame" x="20" y="55" width="280" height="140"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pEf-HV-ET8">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0eH-Nc-6JY" secondAttribute="trailing" constant="20" id="Fyb-zM-o0L"/>
+                    <constraint firstItem="0eH-Nc-6JY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="MTp-4c-77M"/>
+                    <constraint firstItem="JDC-Bu-ixp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="MgE-4D-u5K"/>
+                    <constraint firstItem="JDC-Bu-ixp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Pzi-w6-rGr"/>
+                    <constraint firstItem="GW0-gI-Rlp" firstAttribute="leading" secondItem="JDC-Bu-ixp" secondAttribute="trailing" constant="10" id="SAV-9h-jld"/>
+                    <constraint firstAttribute="bottom" secondItem="0eH-Nc-6JY" secondAttribute="bottom" constant="5" id="gtb-wn-AiO"/>
+                    <constraint firstItem="GW0-gI-Rlp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="l5E-A6-xK9"/>
+                    <constraint firstItem="0eH-Nc-6JY" firstAttribute="top" secondItem="JDC-Bu-ixp" secondAttribute="bottom" constant="12" id="yD0-e6-M4E"/>
+                    <constraint firstAttribute="trailing" secondItem="GW0-gI-Rlp" secondAttribute="trailing" constant="20" id="z03-tc-rNt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnViewAll" destination="GW0-gI-Rlp" id="sAZ-CY-Aij"/>
+                <outlet property="collView" destination="0eH-Nc-6JY" id="UwQ-t0-91O"/>
+                <outlet property="lblTitle" destination="JDC-Bu-ixp" id="zgn-nH-bB8"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forward_red" width="6" height="10"/>
+    </resources>
+</document>

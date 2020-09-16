@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FSPagerViewCell" id="gTV-IL-0wX" customClass="CustomCellFSPagerView" customModule="Browcery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="292" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="292" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1995" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-l4-ats" customClass="ImageViewClass" customModule="Browcery" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="267" height="165"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTt-ZA-GFb" customClass="UIViewClass" customModule="Browcery" customModuleProvider="target">
+                        <rect key="frame" x="161" y="41" width="107" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fph-sc-huB">
+                                <rect key="frame" x="5" y="10" width="97" height="33"/>
+                                <string key="text">Get the Season
+Fresh</string>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-Pd-PNc">
+                                <rect key="frame" x="48.5" y="49" width="10" height="1"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="aSO-tc-28V"/>
+                                    <constraint firstAttribute="width" constant="10" id="bRk-pE-dXi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQv-Gp-4Jy">
+                                <rect key="frame" x="5" y="58" width="97" height="28"/>
+                                <string key="text">10% Off on all
+Essentials</string>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aQv-Gp-4Jy" secondAttribute="trailing" constant="5" id="4YT-TW-8P9"/>
+                            <constraint firstItem="aQv-Gp-4Jy" firstAttribute="top" secondItem="qtE-Pd-PNc" secondAttribute="bottom" constant="8" id="Awb-3x-ggN"/>
+                            <constraint firstItem="fph-sc-huB" firstAttribute="top" secondItem="CTt-ZA-GFb" secondAttribute="top" constant="10" id="Sce-wO-wlN"/>
+                            <constraint firstAttribute="trailing" secondItem="fph-sc-huB" secondAttribute="trailing" constant="5" id="a9E-hV-Q2f"/>
+                            <constraint firstItem="aQv-Gp-4Jy" firstAttribute="leading" secondItem="CTt-ZA-GFb" secondAttribute="leading" constant="5" id="hWK-va-g6L"/>
+                            <constraint firstItem="qtE-Pd-PNc" firstAttribute="centerX" secondItem="CTt-ZA-GFb" secondAttribute="centerX" id="hdo-26-JsU"/>
+                            <constraint firstAttribute="height" constant="98" id="keA-kR-rWM"/>
+                            <constraint firstItem="fph-sc-huB" firstAttribute="leading" secondItem="CTt-ZA-GFb" secondAttribute="leading" constant="5" id="o1K-Tv-DEa"/>
+                            <constraint firstItem="qtE-Pd-PNc" firstAttribute="top" secondItem="fph-sc-huB" secondAttribute="bottom" constant="6" id="xBA-0M-lve"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="firstBackgroundColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Ttc-l4-ats" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="1oV-my-kJH"/>
+                <constraint firstItem="CTt-ZA-GFb" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="G4Z-nR-XLa"/>
+                <constraint firstAttribute="trailing" secondItem="Ttc-l4-ats" secondAttribute="trailing" constant="15" id="Icv-rq-K8V"/>
+                <constraint firstItem="Ttc-l4-ats" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ddD-cw-xZu"/>
+                <constraint firstItem="Ttc-l4-ats" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" constant="-5" id="gGg-Tt-iaN"/>
+                <constraint firstAttribute="trailing" secondItem="CTt-ZA-GFb" secondAttribute="trailing" constant="24" id="iA2-z5-DGG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="292" height="108"/>
+            <connections>
+                <outlet property="imgViewPlayer" destination="Ttc-l4-ats" id="CeJ-vD-fh7"/>
+                <outlet property="lblDescription" destination="aQv-Gp-4Jy" id="WQm-sU-dmu"/>
+                <outlet property="lblTitle" destination="fph-sc-huB" id="Ss1-Sx-IoV"/>
+            </connections>
+            <point key="canvasLocation" x="-7.2463768115942031" y="10.714285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 1995" width="566" height="260"/>
+    </resources>
+</document>

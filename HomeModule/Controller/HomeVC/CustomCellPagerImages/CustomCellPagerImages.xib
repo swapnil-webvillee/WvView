@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Black.ttf">
+            <string>NunitoSans-Black</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomCellPagerImages" id="gTV-IL-0wX" customClass="CustomCellPagerImages" customModule="Browcery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 2271" translatesAutoresizingMaskIntoConstraints="NO" id="gE6-kV-802">
+                        <rect key="frame" x="0.0" y="10" width="275" height="135"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zmb-vm-7dL">
+                        <rect key="frame" x="0.0" y="10" width="275" height="135"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAk-1I-knl">
+                                <rect key="frame" x="0.0" y="0.0" width="175" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get 15% Off" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frd-dD-JNP">
+                                        <rect key="frame" x="10" y="25" width="160" height="21"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Black" family="Nunito Sans" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-EU-7tk">
+                                        <rect key="frame" x="10" y="60" width="20" height="1"/>
+                                        <color key="backgroundColor" red="0.83921568627450982" green="0.098039215686274508" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="2Ta-uu-zGt"/>
+                                            <constraint firstAttribute="height" constant="1" id="5np-sG-1Fu"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU8-qh-qLG">
+                                        <rect key="frame" x="10" y="68" width="160" height="23.5"/>
+                                        <string key="text">Special discount on
+selected items</string>
+                                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="frd-dD-JNP" firstAttribute="leading" secondItem="WAk-1I-knl" secondAttribute="leading" constant="10" id="95h-Ef-Cd7"/>
+                                    <constraint firstAttribute="trailing" secondItem="frd-dD-JNP" secondAttribute="trailing" constant="5" id="MCV-Nl-H6M"/>
+                                    <constraint firstItem="ab1-EU-7tk" firstAttribute="leading" secondItem="WAk-1I-knl" secondAttribute="leading" constant="10" id="bia-FI-YB9"/>
+                                    <constraint firstItem="frd-dD-JNP" firstAttribute="top" secondItem="WAk-1I-knl" secondAttribute="top" constant="25" id="dRc-yK-7zH"/>
+                                    <constraint firstItem="FU8-qh-qLG" firstAttribute="top" secondItem="ab1-EU-7tk" secondAttribute="bottom" constant="7" id="epQ-2D-1tl"/>
+                                    <constraint firstAttribute="trailing" secondItem="FU8-qh-qLG" secondAttribute="trailing" constant="5" id="gsh-Dq-rB9"/>
+                                    <constraint firstItem="ab1-EU-7tk" firstAttribute="top" secondItem="frd-dD-JNP" secondAttribute="bottom" constant="14" id="qXf-Hx-GX5"/>
+                                    <constraint firstItem="FU8-qh-qLG" firstAttribute="leading" secondItem="WAk-1I-knl" secondAttribute="leading" constant="10" id="rLb-Ba-ZVl"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1996" translatesAutoresizingMaskIntoConstraints="NO" id="Gkd-DS-xGa">
+                                <rect key="frame" x="190" y="15" width="85" height="121"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gkd-DS-xGa" firstAttribute="leading" secondItem="WAk-1I-knl" secondAttribute="trailing" constant="15" id="7JM-7S-rTH"/>
+                            <constraint firstAttribute="trailing" secondItem="WAk-1I-knl" secondAttribute="trailing" constant="100" id="8rv-vl-8Oi"/>
+                            <constraint firstAttribute="bottom" secondItem="Gkd-DS-xGa" secondAttribute="bottom" constant="-1" id="Bss-jD-yz5"/>
+                            <constraint firstAttribute="bottom" secondItem="WAk-1I-knl" secondAttribute="bottom" id="SGn-jk-1na"/>
+                            <constraint firstAttribute="trailing" secondItem="Gkd-DS-xGa" secondAttribute="trailing" id="Z5H-Jp-gUl"/>
+                            <constraint firstItem="WAk-1I-knl" firstAttribute="top" secondItem="Zmb-vm-7dL" secondAttribute="top" id="nCG-38-d3S"/>
+                            <constraint firstItem="WAk-1I-knl" firstAttribute="leading" secondItem="Zmb-vm-7dL" secondAttribute="leading" id="oNQ-ox-cQq"/>
+                            <constraint firstItem="Gkd-DS-xGa" firstAttribute="top" secondItem="Zmb-vm-7dL" secondAttribute="top" constant="15" id="seG-Qv-iYI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gE6-kV-802" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Bw7-3d-S70"/>
+                <constraint firstItem="gE6-kV-802" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J2m-gP-ETH"/>
+                <constraint firstItem="Zmb-vm-7dL" firstAttribute="top" secondItem="gE6-kV-802" secondAttribute="bottom" constant="-135" id="Q6k-my-aRe"/>
+                <constraint firstItem="Zmb-vm-7dL" firstAttribute="trailing" secondItem="gE6-kV-802" secondAttribute="trailing" id="Ufn-bf-AHn"/>
+                <constraint firstItem="Zmb-vm-7dL" firstAttribute="top" secondItem="gE6-kV-802" secondAttribute="top" id="aT0-gg-zF3"/>
+                <constraint firstAttribute="bottom" secondItem="gE6-kV-802" secondAttribute="bottom" constant="5" id="dAR-55-Msf"/>
+                <constraint firstItem="Zmb-vm-7dL" firstAttribute="leading" secondItem="gE6-kV-802" secondAttribute="leading" id="fMI-In-myQ"/>
+                <constraint firstAttribute="trailing" secondItem="gE6-kV-802" secondAttribute="trailing" constant="5" id="uQZ-OS-e9K"/>
+                <constraint firstItem="Zmb-vm-7dL" firstAttribute="bottom" secondItem="gE6-kV-802" secondAttribute="bottom" id="vGK-JU-fd5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgView" destination="gE6-kV-802" id="QM4-GC-XVq"/>
+                <outlet property="viewOffers" destination="Zmb-vm-7dL" id="4Y8-yi-6ON"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="120"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 1996" width="160" height="208"/>
+        <image name="Rectangle 2271" width="214" height="120"/>
+    </resources>
+</document>
